@@ -1,12 +1,12 @@
-button:hover{
+button:hover {
     cursor: pointer;
-}
+} 
 
-h1{
+h1 {
     color: blueviolet;
 }
 
-.modo_sexo{
+.modo_sexo  {
     height: 2000px;
     position: absolute;
     display: none;
@@ -15,8 +15,8 @@ h1{
     z-index: 1000;
 }
 
-#btn_si{
-    background-color: beige;
+#btn_si {
+    background-color: cadetblue;
     border-color: cadetblue;
     color: azure;
     font-size: xx-large;

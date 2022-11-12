@@ -1,20 +1,20 @@
-function moverPosicionRandom(elm){
-    elm.style.position='absolute';
-    elm.style.top = Math.random()* (window.innerHeight - elm.offsetHeight) + 'px';
-    elm.style.left = Math.random()* (window.innerHeight - elm.offsetHeight) + 'px';
+function moverPosicionRandom(elm) {
+    elm.style.position = 'absolute';
+    elm.style.top = Math.random() * (window.innerHeight - elm.offsetHeight) + 'px';
+    elm.style.left = Math.random() * (window.innerWidth - elm.offsetWidth) + 'px';
 }
 
-let btnSi= document.getElementById("btn_si")
-let btnNO = document.getElementById("btn_no")
-let divModoSeXo= document.getElementsByClassName("modo_sexo")[0]
+let btnSi = document.getElementById("btn_si");
+let btnNo = document.getElementById("btn_no");
+let divModoSexo = document.getElementsByClassName("modo_sexo")[0];
 
-btnNO.addEventListener('mpuseeenter', function(e){moverPosicionRandom(e.target)})
+btnNo.addEventListener('mouseenter', function(e) { moverPosicionRandom(e.target) });
 
 btnSi.addEventListener('click', function(e) {
-    alert('sabia que diriras que si. Casemonos ya y tengamso hijos. TE AMO!!!')
-    divModoSeXo.style.display= 'block';
-    const cancion= new Audio('');
-    cancion.play();
+    alert('Sabía que dirías que SÍ. Casemonos ya y tengamos hijos. TE AMO!!!! ❤️');
 
-})
+    divModoSexo.style.display = 'block';
+    const cancion = new Audio('img\\modo_hot.mp3');
+    cancion.play();
+});
 
